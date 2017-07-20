@@ -2,6 +2,6 @@ include/blosc-export.h
 include/blosc.h
 lib/libblosc.a
 lib/libblosc.so
-lib/libblosc.so.1
-lib/libblosc.so.1.12.0
+lib/libblosc.so.%%VERSION%%
+lib/libblosc.so.%%SOVERSION%%
 libdata/pkgconfig/blosc.pc
