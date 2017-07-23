@@ -5,7 +5,6 @@ PORTNAME=	c-blosc
 PORTVERSION=	1.12.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	archivers devel
-MASTER_SITES=	GH
 
 MAINTAINER=	iblis@hs.ntnu.edu.tw
 COMMENT=	Blocking, shuffling and loss-less compression library
@@ -58,11 +57,5 @@ ZSTD_CMAKE_ON=	-DDEACTIVATE_ZSTD=OFF \
 		-DPREFER_EXTERNAL_ZSTD=ON
 ZSTD_CMAKE_OFF=	-DDEACTIVATE_ZSTD=ON
 ZSTD_LIB_DEPENDS=	libzstd.so:archivers/zstd
-
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MTEST}
-post-build: test
-.endif
 
 .include <bsd.port.mk>
