@@ -6,3 +6,7 @@ c-blosc:
 
 libwebsockets:
 	rsync -va --progress ./net/libwebsockets /usr/ports/net/
+
+openlibm:
+	make -C ./math/openlibm clean
+	rsync -va --progress ./math/openlibm/ /usr/ports/math/openlibm
