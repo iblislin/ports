@@ -1,7 +1,7 @@
 all:
 
 c-blosc:
-	shar `find ./archivers/c-blosc` > c-blosc.shar
+	# shar `find ./archivers/c-blosc` > c-blosc.shar
 	rsync -va --progress ./archivers/c-blosc /usr/ports/archivers/
 
 libwebsockets:
