@@ -1,5 +1,4 @@
-bin/ganttproject
-share/applications/ganttproject.desktop
+@(,,555) bin/ganttproject
 %%DATADIR%%/HouseBuildingSample.gan
 %%DATADIR%%/LICENSE
 %%DATADIR%%/eclipsito.jar
