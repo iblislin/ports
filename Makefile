@@ -10,3 +10,6 @@ libwebsockets:
 openlibm:
 	make -C ./math/openlibm clean
 	rsync -va --progress ./math/openlibm/ /usr/ports/math/openlibm
+
+mosquitto:
+	rsync -va --progress ./net/mosquitto /usr/ports/net/
