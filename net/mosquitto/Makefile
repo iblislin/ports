@@ -25,8 +25,7 @@ USERS=		nobody
 
 OPTIONS_DEFINE=	WS
 
-CMAKE_ARGS+=	-DCMAKE_LIBDIR="${LOCALBASE}/lib" \
-		-DCMAKE_LIBDATADIR="${PREFIX}/libdata"
+CMAKE_ARGS+=	-DCMAKE_LIBDATADIR="${PREFIX}/libdata"
 
 WS_DESC=	MQTT over Websockets support
 WS_LIB_DEPENDS=	libwebsockets.so:net/libwebsockets

@@ -1,6 +1,6 @@
---- config.mk.orig	2017-07-10 22:46:01 UTC
+--- config.mk.orig	2018-08-16 16:05:26 UTC
 +++ config.mk
-@@ -249,7 +249,7 @@ ifeq ($(WITH_DOCS),yes)
+@@ -272,9 +272,9 @@ ifeq ($(WITH_WEBSOCKETS),static)
  endif
  
  INSTALL?=install
@@ -11,3 +11,5 @@
 +mandir=${PREFIX}/share/man
 +localedir=${PREFIX}/share/locale
  STRIP?=strip
+ 
+ ifeq ($(WITH_STRIP),yes)
