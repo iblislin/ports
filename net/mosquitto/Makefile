@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mosquitto
-PORTVERSION=	1.5.1
+PORTVERSION=	1.5.3
 CATEGORIES=	net
 MASTER_SITES=	http://mosquitto.org/files/source/
 

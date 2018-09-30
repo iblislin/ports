@@ -1,11 +1,11 @@
---- CMakeLists.txt.orig	2018-08-16 16:05:26 UTC
+--- CMakeLists.txt.orig	2018-09-25 15:27:43 UTC
 +++ CMakeLists.txt
-@@ -15,6 +15,9 @@ set (VERSION 1.5.1)
+@@ -15,6 +15,9 @@ set (VERSION 1.5.3)
  
  add_definitions (-DCMAKE -DVERSION=\"${VERSION}\")
  
-+include_directories(%%PREFIX%%/include)
-+link_directories(%%PREFIX%%/lib)
++include_directories(/usr/local/include)
++link_directories(/usr/local/lib)
 +
  if (WIN32)
  	set (BINDIR .)

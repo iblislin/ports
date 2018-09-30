@@ -1,4 +1,4 @@
---- lib/mosquitto_internal.h.orig	2018-08-16 16:05:26 UTC
+--- lib/mosquitto_internal.h.orig	2018-09-25 15:27:43 UTC
 +++ lib/mosquitto_internal.h
 @@ -31,11 +31,7 @@ Contributors:
  #endif
@@ -30,4 +30,4 @@
 +
  	bool clean_session;
  #ifdef WITH_BROKER
- 	bool is_dropping;
+ 	char *old_id; /* for when a duplicate client connects, but we still want to
