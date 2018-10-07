@@ -13,3 +13,6 @@ openlibm:
 
 mosquitto:
 	rsync -va --progress ./net/mosquitto /usr/ports/net/
+
+libsvm:
+	rsync -va --progress ./science/libsvm /usr/ports/science/
