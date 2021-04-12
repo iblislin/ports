@@ -11,14 +11,13 @@ c-blosc-writeback:
 	${RSYNC_CMD} ${RSYNC_FLAGS} ${PORTSDIR}/archivers/c-blosc ./archivers/
 
 libwebsockets:
-	rsync -va --progress --delete ./net/libwebsockets ${PORTSDIR}/net/
+	${RSYNC_CMD} ${RSYNC_FLAGS} ./net/libwebsockets ${PORTSDIR}/net/
 
 openlibm:
-	make -C ./math/openlibm clean
-	rsync -va --progress --delete ./math/openlibm/ ${PORTSDIR}/math/openlibm
+	${RSYNC_CMD} ${RSYNC_FLAGS} ${PORTSDIR}/math/openlibm
 
 mosquitto:
-	rsync -va --progress --delete ./net/mosquitto ${PORTSDIR}/net/
+	${RSYNC_CMD} ${RSYNC_FLAGS} ./net/mosquitto ${PORTSDIR}/net/
 
 libsvm:
-	rsync -va --progress --delete ./science/libsvm ${PORTSDIR}/science/
+	${RSYNC_CMD} ${RSYNC_FLAGS} ./science/libsvm ${PORTSDIR}/science/
