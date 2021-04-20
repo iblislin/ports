@@ -13,6 +13,9 @@ c-blosc-writeback:
 libwebsockets:
 	${RSYNC_CMD} ${RSYNC_FLAGS} ./net/libwebsockets ${PORTSDIR}/net/
 
+libwebsockets-writeback:
+	${RSYNC_CMD} ${RSYNC_FLAGS} ${PORTSDIR}/net/libwebsockets ./net/
+
 openlibm:
 	${RSYNC_CMD} ${RSYNC_FLAGS} ${PORTSDIR}/math/openlibm
 
